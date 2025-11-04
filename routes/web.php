@@ -41,3 +41,7 @@ Route::post('/discount', [DiscountController::class, 'calculate']);
 use App\Http\Controllers\OrderChainController;
 
 Route::post('/orders/simple-chain', [OrderChainController::class, 'process']);
+
+use App\Http\Controllers\PaymentTplController;
+
+Route::post('/payments/template', [PaymentTplController::class, 'pay']);
